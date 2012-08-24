@@ -1,0 +1,87 @@
+.jcarousel-skin-tango .jcarousel-container {
+	margin-top:20px;
+    background: #B83B2A;
+	margin-left: -35px;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 887px;
+    padding: 1px 35px 15px;
+}
+
+.jcarousel-skin-tango .jcarousel-container-vertical {
+    width: 275px;
+    height: 245px;
+    padding: 40px 20px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	margin-top: 13px;
+    width:  878px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-vertical {
+    width:  275px;
+    height: 245px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 175px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 118px;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+	background:white;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+    top: 74px;
+    right: -12px;
+    width: 75px;
+    height: 15px;
+    cursor: pointer;
+	margin-top: 34px;
+    background: transparent url(next.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(control-buttons.png);
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 74px;
+    left: 12px;
+    width: 23px;
+    height: 15px;
+    cursor: pointer;
+	margin-top: 34px;
+    background: transparent url(control-buttons.png) no-repeat 0 0;
+}

@@ -1,0 +1,1 @@
+<div id="footer"> &copy; Copyright 2012 <span class="tip"><a  href="#" title="Admin" >admin of apple book store</a> </span> </div>

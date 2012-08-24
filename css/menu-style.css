@@ -1,0 +1,133 @@
+/*********************************menu**********************************/
+#main-menu {
+	float:left;
+	position:relative;
+	min-height:67px;
+	padding-left:10px;
+	width:780px;
+}
+
+.menu {
+	padding:0; 
+	width:100%;
+}
+.menu > li {
+	float:left;
+	background:url(../images/border-1.gif) repeat-y left 0;
+	position:relative;
+	padding:0px 0 0px;
+}
+
+.menu > li.last {
+}
+.menu > li a {
+	background:url(../images/hover-1.png) repeat-x 0 -68px;
+	display:block; 
+	font-size:12px;
+	line-height:15px;
+	color:#6e6e6e; 
+	text-align:center; 
+	padding: 25px 0px 23px;
+	width:160px;
+	transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+}
+
+.menu > li:first-child a {width:140px;}
+
+.menu > li > a:hover, .menu > li.sfHover > a, .menu > li > a.active {color:#fff;}
+.menu > li > a.active {background-position: 0 0;}
+
+.menu li:hover {visibility:	inherit; }
+
+#main-menu span {
+	background:url(../images/border-3.gif) repeat-x 0 0;
+	display:block;
+	position:absolute;
+	top:63px;
+	left:11px;
+	height:4px;
+	width:0px;
+}
+
+.menu li a strong {
+    background: url("../images/marker-4.png") no-repeat scroll 0 -21px transparent;
+    display: block;
+    height: 4px;
+    left: 115px;
+    position: absolute;
+    top: 31px;
+    width: 7px;
+}
+
+.menu li a:hover strong, .menu li a.active strong, .menu li.sfHover a strong {background-position: 0 0;}
+
+
+/******************************** submenu **************************************/
+.menu ul {
+	position:		absolute;
+	padding:		4px 5px 0px;
+	top:			-999em;
+	width:			159px;
+	background: 	#222;
+	box-shadow: 0px 2px 3px #000;
+	-moz-box-shadow: 0px 2px 3px #000;
+	-webkit-box-shadow: 0px 2px 3px #000;
+}
+
+.menu li li {width:	100%; padding:0px; background:url(../images/border-6.gif) repeat-x 0 top;}
+.menu li li a {
+	display:inline-block;
+	color:#6e6e6e;
+	padding:		19px 0 16px 15px;
+	text-align:		left;
+}
+
+.menu li:hover ul, .menu li.sfHover ul {
+	left:			0px;
+	top:			67px;
+	z-index:		999;
+}
+ul.menu li:hover li ul, ul.menu li.sfHover li ul {
+	top:			-999em;
+}
+
+.menu li li a:hover, .menu li li.sfHover > a {color:#fff;}
+
+/******************************** submenu 2 **************************************/
+ul.menu li li:hover ul, ul.menu li li.sfHover ul {
+	left:			169px;
+	top:			50px;
+	z-index:		9999;
+}
+ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
+	top:			-999em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	#main-menu{ width:650px;}
+	.menu > li a, .menu > li:first-child a {width:130px;}
+	.menu li a strong {left:100px;}
+}
+@media only screen and (max-width: 767px) {
+	#main-menu{ width:300px;padding-left:0;}
+	#main-menu span {display:none;}
+	.menu > li, .menu li li {float:none;background:none;padding-bottom:7px;}
+	.menu > li a {transition: none;	-moz-transition: none;-webkit-transition: none;display:block;text-align:left;background:#2b2b2b;padding: 16px 0 17px 20px;width:280px;}
+	.menu > li a, .menu > li:first-child a  {width:280px;}
+	.menu > li > a:hover, .menu > li.sfHover > a, .menu > li > a.active,
+	.menu li li > a:hover, .menu li li.sfHover > a, .menu li li > a.active {background:#c03717;}
+	.menu li li.last {padding-bottom:0;}
+	.menu ul {position:relative !important;top:0 !important;width:290px;left:0 !important;background:none;padding: 7px 0 0 10px;box-shadow: none;-moz-box-shadow: none;-webkit-box-shadow:none;}
+	.menu li li a {width:275px !important;}
+	.menu li li li a {width:265px !important;}
+	.menu li a strong {left:80px;top:23px;}	
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#main-menu{ width:420px;}	
+	.menu > li a, .menu > li:first-child a {width:400px;}
+	.menu li li a {width:395px !important;}
+	.menu li li li a {width:385px !important;}
+	.menu ul {left:0px !important;width:420px;}
+}
